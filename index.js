@@ -5,7 +5,7 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const { connectDB } = require("./connection");
 const routes = require("./routes");
-const dotenv = require("dotenv").config();
+require("dotenv").config();
 
 connectDB();
 app.use(express.json());
